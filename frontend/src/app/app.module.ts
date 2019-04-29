@@ -12,6 +12,7 @@ import {AppComponent} from './app.component';
 import {MaterialModule} from './material.module';
 import {MessagingService} from './messaging.service';
 import {AsyncPipe} from '@angular/common';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {AsyncPipe} from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MaterialModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule,
