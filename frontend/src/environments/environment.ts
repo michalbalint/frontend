@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyCaXO-VBXS-d8hiIZI1xIaKi-0lRDl0O_I',
+    authDomain: 'tuke-iot-2019.firebaseapp.com',
+    databaseURL: 'https://tuke-iot-2019.firebaseio.com/',
+    projectId: 'tuke-iot-2019',
+    storageBucket: 'tuke-iot-2019.appspot.com',
+    messagingSenderId: '1077577995303'
+  }
 };
 
 /*
