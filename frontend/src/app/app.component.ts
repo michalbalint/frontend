@@ -9,6 +9,7 @@ import {RoomService} from './room.service';
 })
 export class AppComponent implements OnInit {
   message;
+  rooms: RoomService[];
 
   constructor(private messagingService: MessagingService,
               private roomService: RoomService) {
@@ -19,6 +20,12 @@ export class AppComponent implements OnInit {
     this.messagingService.requestPermission(userID);
     this.messagingService.receiveMessage();
     this.message = this.messagingService.currentMessage;
+
+    this.roomService.getRooms().subscribe(
+      (data: any) => {
+        this.rooms = data;
+      }
+    );
 
     this.message.subscribe(
       m => {

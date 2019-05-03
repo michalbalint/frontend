@@ -1,6 +1,6 @@
 <mat-toolbar color="primary"><span>IOT</span></mat-toolbar>
 
-<div style="margin:16px;">
-  <div>{{ message | async | json }}</div>
-  <div>{{ roomService.getRooms()  | async }}</div>
+<div *ngFor=" let room of rooms">
+  <div>{{room.name}}</div>
+  <div>{{room.door}}</div>
 </div>
