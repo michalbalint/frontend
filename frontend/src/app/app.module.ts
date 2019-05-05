@@ -13,10 +13,18 @@ import {MaterialModule} from './material.module';
 import {MessagingService} from './messaging.service';
 import {AsyncPipe} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
+import {HomeComponent} from './component/home/home.component';
+import {MojrozvrhComponent} from './component/mojrozvrh/mojrozvrh.component';
+import {FiltercisloucebneComponent} from './component/filtercisloucebne/filtercisloucebne.component';
+import {FilterprofesorComponent} from './component/filterprofesor/filterprofesor.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    MojrozvrhComponent,
+    FiltercisloucebneComponent,
+    FilterprofesorComponent
   ],
   imports: [
     BrowserModule,

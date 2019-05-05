@@ -1,6 +1,14 @@
-<mat-toolbar color="primary"><span>IOT</span></mat-toolbar>
-
-<div *ngFor=" let room of rooms">
-  <div>{{room.name}}</div>
-  <div>{{room.door}}</div>
+<div class="navbar">
+  <a class="home" routerLink="home">Home</a>
+  <a routerLink="mojrozvrh">Moj Rozvrh</a>
+  <div class="dropdown">
+    <button class="dropbtn">Najst ucebnu<i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a routerLink="filterprofesor">Podla ucitela</a>
+      <a routerLink="filtercisloucebne">Podla cisla</a>
+    </div>
+  </div>
 </div>
+
+<router-outlet></router-outlet>
+
