@@ -1,0 +1,8 @@
+<select>
+  <option *ngFor="let room of rooms" (click)="onClickSelect(room.roomId)">{{room.door}}</option>
+</select>
+
+<p *ngIf="isSelected">{{room.name}}</p>
+
+
+

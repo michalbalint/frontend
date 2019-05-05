@@ -17,7 +17,6 @@ import {HomeComponent} from './component/home/home.component';
 import {MojrozvrhComponent} from './component/mojrozvrh/mojrozvrh.component';
 import {FiltercisloucebneComponent} from './component/filtercisloucebne/filtercisloucebne.component';
 import {FilterprofesorComponent} from './component/filterprofesor/filterprofesor.component';
-import { CisloucebnedetailComponent } from './component/cisloucebnedetail/cisloucebnedetail.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +24,7 @@ import { CisloucebnedetailComponent } from './component/cisloucebnedetail/cislou
     HomeComponent,
     MojrozvrhComponent,
     FiltercisloucebneComponent,
-    FilterprofesorComponent,
-    CisloucebnedetailComponent
+    FilterprofesorComponent
   ],
   imports: [
     BrowserModule,

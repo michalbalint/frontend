@@ -1,0 +1,5 @@
+<select>
+  <option *ngFor="let lecturer of lecturers" (click)="onClickSelect(lecturer.lecturerId)">{{lecturer.surname}}</option>
+</select>
+
+<p *ngIf="isSelected">{{lecturer.name}}</p>
