@@ -17,6 +17,9 @@ import {HomeComponent} from './component/home/home.component';
 import {MojrozvrhComponent} from './component/mojrozvrh/mojrozvrh.component';
 import {FiltercisloucebneComponent} from './component/filtercisloucebne/filtercisloucebne.component';
 import {FilterprofesorComponent} from './component/filterprofesor/filterprofesor.component';
+import { NavComponent } from './component/nav/nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import {FilterprofesorComponent} from './component/filterprofesor/filterprofesor
     HomeComponent,
     MojrozvrhComponent,
     FiltercisloucebneComponent,
-    FilterprofesorComponent
+    FilterprofesorComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,13 @@ import {FilterprofesorComponent} from './component/filterprofesor/filterprofesor
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     AngularFireMessagingModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [MessagingService, AsyncPipe],
   bootstrap: [AppComponent]

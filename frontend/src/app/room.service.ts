@@ -27,6 +27,6 @@ export class RoomService {
   }
 
   getLecturerWithId(lecturerId): Observable<Lecturer[]> {
-    return this.http.get<Lecturer[]>(this.gLecturer + 'lecturers/' + lecturerId);
+    return this.http.get<Lecturer[]>(this.gLecturer + 'lecturer/' + lecturerId);
   }
 }
