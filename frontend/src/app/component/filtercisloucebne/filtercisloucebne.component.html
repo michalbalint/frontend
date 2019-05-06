@@ -1,8 +1,15 @@
-<select>
-  <option *ngFor="let room of rooms" (click)="onClickSelect(room.roomId)">{{room.door}}</option>
-</select>
+<div class="select">
+  <select>
+    <option *ngFor="let room of rooms" (click)="onClickSelect(room.roomId)">{{room.door}}</option>
+  </select>
+  <div class="select_arrow">
 
-<p *ngIf="isSelected">{{room.name}}</p>
+  </div>
+</div>
 
+
+<div class="box">
+  <p *ngIf="isSelected">{{room.name}}</p>
+</div>
 
 
